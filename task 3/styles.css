@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/back2.jpeg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.temperature-converter{
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    padding: 24px 30px;
+    text-align: center;
+}
+.temperature-converter h1{
+    font-size: 28px;
+    color: #202124;
+    margin-bottom: 40px;
+}
+.temperature-converter .input-container{
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-block: 20px;
+}
+
+.temperature-converter .input-container input,
+.temperature-converter .input-container select{
+    width: 150px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    overflow: hidden;
+
+}
+.temperature-converter .arrow{
+    transform: rotate(90deg);
+    font-size: 40px;
+}
+.temperature-converter .result{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+#convert-btn {
+    background: linear-gradient(to bottom, green, lightgreen);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #f6f6f6;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 12px 80px;
+    transition: all 0.3s ease-in;
+  }
+  #convert-btn:hover {
+    background: linear-gradient(to bottom, #4a47e7, #322fda);
+  }
+  #reset-btn {
+    background: linear-gradient(to bottom, red, orange);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #f6f6f6;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 12px 80px;
+    transition: all 0.3s ease-in;
+  }
+  #reset-btn:hover {
+    background: linear-gradient(to bottom, #4a47e7, #322fda);
+  }
+
+.result {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .result-heading {
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .celsius-value {
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    transition: all .45s ease;
+  }
+
+
+/* responsive css code */
+@media  screen and (max-width: 420px) {
+    .temperature-converter{
+        width: 80%;
+        margin: 0 auto;
+
+    }
+    .temperature-converter h1{
+        font-size: 22px;
+    }
+    .temperature-converter .input-container{
+        border: none;
+    }
+    .temperature-converter .input-container input,
+    .temperature-converter .input-container select{
+        border: 1px solid black;
+        margin-block: 4px;
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 350px){
+  #convert-btn{
+    width: 100%;
+  }
+  #reset-btn{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
