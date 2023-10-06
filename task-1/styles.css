@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+:root{
+    --main-color: #8e44ad;
+    --black: #222;
+    --white:#fff;
+    --light-black: #777;
+    --light-white: #fff9;
+    --dark-bg: #eee;
+    --boarder: 1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --text-shadow: 0 1.5rem 3rem rgba(0,0,0,.3);
+
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+    
+}
+html::-webkit-scrollbar-track{
+    background-color: var(--white);
+}
+html::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 50px;
+    overflow-y: hidden;
+    
+}
+
+/* header css start here */
+
+section{
+    padding: 5rem 10%;
+}
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgb(92, 91, 91);
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    font-size: 4rem;
+    color: red;
+    font-weight: 500;
+}
+.header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: white;
+}
+.header .navbar a:hover{
+    color: red;
+}
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color:var(--black);
+    display: none;
+}
+/* header css ends here */
+
+/* home css starts here */
+.home{
+    padding: 0;
+}
+.home .slide{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-size: center !important;
+    min-height: 60rem;
+}
+.home .slide .content{
+    width: 85rem;
+
+}
+.home .slide .content span{
+    display: block;
+    font-size: 3rem;
+    color: var(--white);
+    padding-bottom: 1rem;
+    padding-top: 3.5rem;
+}
+.home .slide .content h3{
+    font-size: 6vw;
+    color: var(--white);
+    text-decoration: uppercase;
+    line-height: 1;
+    text-shadow: var(--text-shadow);
+    padding: 1rem 0;
+}
+.btn{
+    display: inline-block;
+    background: red;
+    margin-top: 1rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.btn:hover{
+ background: var(--black);   
+}
+
+/* home css ends here */
+
+/* course css start here */
+.heading-title{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 3rem;
+    
+}
+.courses .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 50px;
+    
+}
+.courses .box-container .box{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: darkgray;
+    cursor: pointer;
+}
+.courses .box-container .box:hover{
+    background: wheat;
+}
+.courses .box-container .box img{
+    height: 7rem;
+}
+.courses .box-container .box h3{
+    color: var(--white);
+    font-size: 2rem;
+    padding-top: 1rem;
+    font-weight: 800;
+}
+/* courses css ends here */
+
+/* about css starts here */
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about .image{
+    flex: 1 1 41rem;
+    
+}
+.about .image img{
+    width: 100%;
+    height: 60vh;
+    border-radius: 40px;
+}
+.about .content{
+    flex: 1 1 41rem;
+    padding: 3rem;
+    background: var(--light-bg);
+
+}
+.about .content h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+.about .content p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--black);
+}
+.about .content p span{
+    color: green;
+    font-weight: 1000;
+
+}
+/* about css ends here */
+
+/*contact us css starts here */
+#contact{
+    background-color: #cfe6c3;
+}
+.container {
+    border-radius: 50px;
+    
+    padding: 10px;
+    margin-left: 200px;
+    width: 60%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .container h2{
+    font-weight: 800;
+    font-size: 3rem;
+  }
+  .column {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+    padding: 20px;
+    padding-left: 70px;
+    padding-top: 25px;
+  
+    
+  }
+  input{
+    border-radius: 40px;
+  }
+  
+  input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 30px;
+    
+  }
+  
+  input[type=submit] {
+    background-color: #dd0e0e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* contact css ends here */
+
+  /* footer css starts here */
+
+.footer{
+    background-color: darkgray;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+.footer .box-container .box h3{
+    color: var(--white);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+.footer .box-container .box a{
+    color: var(--light-white);
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    display: block;
+    
+}
+.footer .box-container .box a i{
+    color: var(--main-color);
+    padding-right: 5rem;
+    transition: .2s linear;
+}
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+    
+}
+.footer .credit{
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: .1rem solid var(--light-white);
+    font-size: 2rem;
+    color: var(--white);
+
+}
+.footer .credit span{
+    color: var(--main-color);
+}
+/* footer css ends here */
+
+
+
+
+
+
+
+
+/* responsive design starts here */
+@media (max-width:1200px){
+    section{
+        padding: 3rem 5%;
+    }
+    
+}
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+    .home .slide .content h3{
+        font-size: 10vw;
+    }
+    
+}
+@media (max-width:768px){
+    #menu-btn{
+        display: inline-block;
+        transition: .2s linear;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        border-top: var(--boarder);
+        padding: 2rem;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar .active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    .header .navbar a{
+        display: block;
+        margin: 2rem;
+        text-align: center;
+    }
+    .container{
+        margin-left: 20px;
+        padding: 4px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading-title{
+        font-size: 3.5rem;
+    }
+    
+}
+
+ /* responsive design ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
