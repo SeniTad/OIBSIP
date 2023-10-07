@@ -1,0 +1,543 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #3d3c3c;
+    color: #fff;
+
+}
+/* header styling start here */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    background-color: gray;
+    height: 13vh;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: rgb(136, 65, 79);
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: rgb(6, 119, 66);
+    font-size: 35px;
+    font-weight: 800;
+    text-decoration: none;
+}
+.navbar .logo a span{
+    color: rgb(27, 39, 26);
+    transition: all 0.3s ease;
+    
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    
+}
+.navbar .menu li a{
+    display: block;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 25px;
+    padding-right: 20px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+.navbar .menu li a:hover{
+    color: rgb(7, 128, 7);
+    text-decoration: underline;
+}
+nav .fas{
+    display: none;
+}
+
+/* header styling ends here */
+
+
+/* home  section styling start here*/
+.home{
+    display: flex;
+    background: url("images/background2.jpg") no-repeat right ;
+    height: 100vh;
+    color: black;
+    min-height: 500px;
+    background-color: white;
+    
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+
+.home-content{
+    margin-top: 200px;
+    margin-left: 50px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 35px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 50px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-right: 30px;
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+    text-decoration: underline;
+}
+
+/* home section styling ends here */
+
+
+
+/* about section styling starts here */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+    background-color: #111;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1 {
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+.about-col-2 {
+    flex-basis: 60%;
+    padding-top: 110px;
+    padding-left: 80px;
+}
+.about-col-2 p{
+    padding-top: 30px;
+    line-height: 1.5rem;
+}
+.sub-title{
+    font-size: 55px;
+    font-weight: 600;
+    color: white;
+    
+}
+/* about section styling ends here */
+
+  /* skill section styling starts here */
+  section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 80px;
+}
+.skills-content{
+    padding-top: 5px;
+}
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+  .column {
+    margin-top: 7%;
+    margin-bottom: 7%;
+    padding: 3rem 4rem;
+    background-color: gray;
+    border-radius: 50px;
+    text-align: center;
+    float: left;
+    width: 30%;
+    
+  }
+  
+
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.skills .skills-content .left a:hover{
+    color: crimson;
+    background: white;
+    text-decoration: underline;
+
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    
+}
+.skills-content .right .amharic::before{
+    width: 100%;
+    background-color: green;
+}
+.skills-content .right .english::before{
+    width: 90%;
+    background-color: green;
+}
+.skills-content .right .ms-office::before{
+    width: 80%;
+    background-color: green;
+}
+.skills-content .right .html-css::before{
+    width: 80%;
+    background-color: green;
+}
+.skills-content .right .js::before{
+    width: 50%;
+    background-color: yellow;
+}
+
+
+
+  /* skills section styling end here */
+
+
+  /* service section styling start here */
+
+  #services{
+    background: #111;
+    
+  }
+  #services h1{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  #services .container .row{
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+  }
+  .item{
+    margin-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    display: -ms-flexbox;
+    max-width: 33.3%;
+    flex: 0 0 33.3%;
+    -ms-flex: 0 0 33.3%;
+    text-align: center;
+
+  }
+  .box{
+        position: relative;
+        width: 300px;
+        height: 260px;
+        margin: 20px;
+        border: 2px solid #000;
+    }
+    
+
+    .box::before {
+        content: '';
+        
+        content: "";
+        position: absolute;
+        border-top: 3px solid gold;
+        border-left: 3px solid gold;
+        left: 0;
+        top: 0;
+        
+        width: 40px;
+        height: 25px;
+    }
+    .box:hover{
+        background-color: rgb(44, 3, 3);
+        border-radius: 25px;
+        cursor: pointer;
+        
+    }
+
+    .box .inner{
+        padding: 30px;
+    }
+    .box .inner h3{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    .box .inner p{
+        font-size: .9rem;
+        line-height: 22px;
+        opacity: .8px;
+    }
+    
+/* service section styling ends here */
+
+/* contact me styling start here*/
+.contact{
+    padding-left: 600px;
+}
+.container2{
+    line-height: 50px;
+}
+.fa-envelope{
+    margin-right: 20px;
+    font-size: 30px;
+    color: white;
+    
+}
+.fa-phone{
+    margin-right: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+.fa-telegram  {
+    margin-right: 20px;
+    font-size: 40px;
+    color: white;
+}
+.fa-linkedin {
+    margin-right: 20px;
+    font-size: 40px;
+    color: white;
+}
+/* contact me styling ends here*/
+
+
+/* footer section styling  starts here*/
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+/* footer section styling ends here */
+
+
+
+
+
+
+
+    /* responsive website starts here  */
+
+    @media (max-width: 1150px){
+        .item{
+            max-width: 50%;
+            flex: 0 0 50%;
+            -ms-flex: 0 0 50%;
+            
+        
+          }
+          .contact{
+            padding-left: 200px;
+        }
+        #about img{
+            padding-top: 100px;
+        }
+
+    }
+    @media (max-width: 991px) {
+        .max-width{
+            padding: 0 50px;
+        }
+    }
+    @media (max-width: 950px){
+        nav .fas{
+            display: block;
+            font-size: 25px;
+
+        }
+        nav ul{
+            background: #ff004f;
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 300px;
+            height: 100vh;
+            padding-top: 50px;
+            z-index: 2;
+            transition: right 0.5s;
+        }
+        nav ul li{
+            display: block;
+            margin: 25px;
+        }
+        nav ul .fas{
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            cursor: pointer;
+        }
+
+
+    }
+    @media (max-width: 947px){
+        
+        .home .home-content .text-2{
+            font-size: 70px;
+        }
+        .home .home-content .text-3{
+            font-size: 35px;
+        }
+        .home .home-content a{
+            font-size: 23px;
+            padding: 10px 30px;
+        }
+        .max-width{
+            max-width: 930px;
+        }
+        .skills .skills-content .column{
+            width: 100%;
+        margin-bottom: 35px;
+        }
+    }
+    @media (max-width: 850px){
+        .contact{
+            padding-left: 200px;
+        }
+        #about img{
+            padding-top: 200px;
+
+        }
+    }
+    @media (max-width: 800px){
+        .item{
+            max-width: 100%;
+            flex: 0 0 100%;
+            -ms-flex: 0 0 100%;
+            
+        
+          }
+
+    }
+    @media (max-width: 690px) {
+        .max-width{
+            padding: 0 23px;
+        }
+        .home .home-content .text-2{
+            font-size: 60px;
+        }
+        .home .home-content .text-3{
+            font-size: 32px;
+        }
+        .home .home-content a{
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 670px){
+        .about-col-2{
+            font-size: 1rem;
+        }
+    }
+    
+    @media (max-width: 500px) {
+        .home .home-content .text-2{
+            font-size: 50px;
+        }
+        .home .home-content .text-3{
+            font-size: 27px;
+        }
+        .skills .skills-content .left .text{
+            font-size: 19px;
+        }
+        
+        .contact{
+            padding-left: 200px;
+        }
+    }
+/* responsive website ends here  */
+
